@@ -1,0 +1,13 @@
+.content {
+  padding-left: 2.7rem;
+  width: calc(100% - 3rem);
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    padding-left: 19rem;
+    width: calc(100% - 20rem);
+    margin-top: 4rem;
+}
+}

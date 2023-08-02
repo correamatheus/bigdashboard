@@ -1,0 +1,31 @@
+<header class="sidebar" [ngClass]="{ 'active': isSidebarActive }">
+  <div class="sidebar__title">
+    <img>
+    <h2>BigDashboard</h2>
+  </div>
+
+  <ul class="sidebar__list">
+    <li class="sidebar__item">Painel</li>
+    <li class="sidebar__item">Projetos</li>
+    <li class="sidebar__item">Leads</li>
+    <li class="sidebar__item">Campanhas</li>
+    <li class="sidebar__item">Notificações</li>
+  </ul>
+
+  <div class="sidebar__profile">
+    <div class="profile__image">
+      <img src="https://picsum.photos/id/237/200/300" alt="Nome do Usuário">
+    </div>
+    <div class="profile__info">
+      <p class="profile__name">Nome do Usuário</p>
+      <p class="profile__email">usuário@example.com</p>
+    </div>
+  </div>
+</header>
+
+<button class="mobile-menu-button" (click)="toggleSidebar()">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+

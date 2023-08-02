@@ -1,0 +1,99 @@
+.painel {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+
+  background: #fe454a;
+  border-radius: 12px;
+}
+
+.painel__title, .painel__icons {
+  color: #fff;
+}
+
+.painel__title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.painel__title p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.icons__lupa, .icons__bookmark {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+}
+
+.painel__icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.painel-updates {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.painel-updates__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+.painel-updates__cards--date {
+  font-size: 0.8rem; /* Tamanho de fonte menor */
+  color: #999; /* Cor cinza ou de sua escolha */
+  margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.painel-updates__cards--desc {
+  font-size: 0.8rem; /* Tamanho de fonte menor */
+  color: #999; /* Cor cinza ou de sua escolha */
+  margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.painel-conf {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+
+.painel-conf__btn {
+  background: #11307B;
+    border-radius: 12px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 992px) {
+  .painel-updates {
+    flex-direction: row;
+  }
+
+  .painel-conf {
+    flex-direction: row;
+  }
+
+  .painel-conf__btn {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}
