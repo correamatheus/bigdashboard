@@ -37,20 +37,22 @@
 }
 
 .sidebar__profile {
-  display: none;
+  bottom: 10%;
+  position: absolute;
   text-align: center;
+  padding: 20px;
   /* margin-top: auto; */
 }
 
 .profile__image img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%; /* Faz a imagem ser redonda */
   margin-bottom: 10px;
 }
 
 .profile__name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 5px;
 }
 
@@ -59,9 +61,18 @@
 }
 
 .sidebar__item {
+  cursor: pointer;
   color: #11307b;
   font-size: 14px;
   font-weight: 600;
+}
+
+.sidebar__item:hover {
+  color: #fff;
+  background: #FE454A;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
 }
 
 
@@ -99,6 +110,10 @@
     background-color: #f4f4f4;
     padding: 20px;
     top: 0;
+  }
+
+  .sidebar__profile {
+    display: block;
   }
 }
 
