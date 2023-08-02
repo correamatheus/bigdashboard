@@ -1,31 +1,33 @@
-<section class="painel">
-  <div class="painel__title">
-    <h2>Painel</h2>
-    <p>As últimas atualizações de hoje</p>
-  </div>
-  <div class="painel__icons">
-      <span class="icons__lupa"><fa-icon [icon]="faMagnifyingGlass"></fa-icon></span>
-      <span class="icons__bookmark"><fa-icon [icon]="faBookmark"></fa-icon></span>
-  </div>
-</section>
 
-<section class="painel-updates">
-    <div class="painel-updates__cards">
-      <div class="painel-updates__cards--date">02/08/23</div>
-      <div class="painel-updates__cards--title">Atualização Dashboard</div>
-      <div class="painel-updates__cards--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, necessitatibus ea? Doloribus blanditiis provident consectetur voluptatem eum in expedita animi libero aliquid, magnam illo veniam adipisci fuga, exercitationem, dolore quos.</div>
+  <section class="painel-container">
+    <div class="painel">
+      <div class="painel__title">
+        <h2>Painel</h2>
+        <p>As últimas atualizações de hoje</p>
+      </div>
+      <div class="painel__icons">
+          <span class="icons__lupa"><fa-icon [icon]="faMagnifyingGlass"></fa-icon></span>
+          <span class="icons__bookmark"><fa-icon [icon]="faBookmark"></fa-icon></span>
+      </div>
     </div>
 
-    <div class="painel-updates__cards">
-      <div class="painel-updates__cards--date">02/08/23</div>
-      <div class="painel-updates__cards--title">Atualização Dashboard</div>
-      <div class="painel-updates__cards--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, necessitatibus ea? Doloribus blanditiis provident consectetur voluptatem eum in expedita animi libero aliquid, magnam illo veniam adipisci fuga, exercitationem, dolore quos.</div>
-    </div>
-</section>
+    <div class="painel-updates">
+        <div class="painel-updates__cards" *ngFor="let updateCard of updateCardsInfo">
+          <div class="painel-updates__cards--date">{{ updateCard.date }}</div>
+          <div class="painel-updates__cards--title">{{ updateCard.title }}</div>
+          <div class="painel-updates__cards--desc">{{ updateCard.desc }}</div>
+        </div>
 
-<section class="painel-conf">
-    <div class="painel-conf__btn">Configuração de Leads</div>
-    <div class="painel-conf__btn">Email Marketing</div>
-    <div class="painel-conf__btn">Configuraçoes de Campanha</div>
-    <div class="painel-conf__btn">Geral</div>
-</section>
+    </div>
+
+    <div class="painel-conf">
+        <div class="painel-conf__btn">Configuração de Leads</div>
+        <div class="painel-conf__btn">Email Marketing</div>
+        <div class="painel-conf__btn">Configuraçoes de Campanha</div>
+        <div class="painel-conf__btn">Geral</div>
+    </div>
+  </section>
+
+
+
+

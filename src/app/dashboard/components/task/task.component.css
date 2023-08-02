@@ -1,0 +1,39 @@
+.task {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.task__title {
+  font-weight: 600;
+  color: #11307b;
+}
+
+.task__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.task__cards--date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.task__cards--title {
+  text-align: center;
+}
+
+.task__card--btn {
+    cursor: pointer;
+    background: #11307B;
+    border-radius: 12px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

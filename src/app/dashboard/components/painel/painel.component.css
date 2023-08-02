@@ -1,3 +1,4 @@
+
 .painel {
   padding: 20px;
   background-color: #fff;
@@ -73,17 +74,23 @@
 }
 
 .painel-conf__btn {
-  background: #11307B;
+    background: #11307B;
     border-radius: 12px;
     padding: 10px;
     color: #fff;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
   .painel-updates {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .painel-updates__cards {
+    flex: 0 0 44%;
   }
 
   .painel-conf {
